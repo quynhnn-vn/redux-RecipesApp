@@ -1,8 +1,12 @@
-import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import { combineReducers, createStore } from "redux";
 
-export const store = configureStore({
-  reducer: {
-    counter: counterReducer,
-  },
-});
+import { allRecipesReducer } from "../features/allRecipes/allRecipesSlice";
+import { favoriteRecipesRecuder } from "../features/favoriteRecipes/favoriteRecipesSlice";
+import  { searchTermReducer } from "../features/searchTerm/searchTermSlice";
+
+// Create Store in combining reducers
+export const store = createStore(combineReducers({
+  allRecipes: allRecipesReducer,
+  favoriteRecipes: favoriteRecipesRecuder,
+  searchTerm: searchTermReducer
+}));
