@@ -1,3 +1,9 @@
+React Redux app: Choose Your Recipes
+This application does the following:
+- Displays a set of recipes which are pulled from a database.
+- Allows the user to add/remove their favorite recipes to/from a separate list.
+- Allows the user to enter a search term to filter the visible recipes.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
 ## Available Scripts
@@ -12,11 +18,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
-## Functionality
 
-This application does the following:
-•	displays a set of recipes which are pulled from a database.
-•	allows the user to add/remove their favorite recipes to/from a separate list.
-•	allows the user to enter a search term to filter the visible recipes.
+
 
 
