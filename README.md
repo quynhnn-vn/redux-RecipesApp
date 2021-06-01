@@ -6,12 +6,10 @@ This application does the following:
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
-## Available Scripts
-
 In the project directory, you can run:
 
-### `yarn start`
-To view the deployed version, open [https://recipesapp-qnn.netlify.app/](https://recipesapp-qnn.netlify.app/)
+#### `yarn start`
+To view the deployed version, open [https://choose-your-recipes-qnn.netlify.app/](https://choose-your-recipes-qnn.netlify.app/)
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
