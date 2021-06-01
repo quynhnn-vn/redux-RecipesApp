@@ -1,4 +1,4 @@
-React Redux app: Choose Your Recipes
+# React Redux app: Choose Your Recipes
 This application does the following:
 - Displays a set of recipes which are pulled from a database.
 - Allows the user to add/remove their favorite recipes to/from a separate list.
@@ -11,9 +11,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 In the project directory, you can run:
 
 ### `yarn start`
+To view the deployed version, open [https://recipesapp-qnn.netlify.app/](https://recipesapp-qnn.netlify.app/)
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
 
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
