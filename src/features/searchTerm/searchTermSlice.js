@@ -13,6 +13,7 @@ export const clearSearchTerm = () => {
 
 // Create initialState and reducer for searchTerm slice
 const initialSearchTerm = "";
+
 export const searchTermReducer = (searchTerm = initialSearchTerm, action) => {
   switch (action.type) {
     case "searchTerm/setSearchTerm":

@@ -10,7 +10,7 @@ const render = () => {
     document.getElementById("root")
   );
 };
-// Subscribe render to changes to the store
-store.subscribe(render);
 // Render with the initial state
 render();
+// Subscribe render to changes to the store
+store.subscribe(render);

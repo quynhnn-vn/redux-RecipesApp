@@ -11,22 +11,20 @@ export const FavoriteRecipes = ({ favoriteRecipes, dispatch }) => {
     dispatch(removeRecipe(recipe));
   };
 
-  const createRecipeComponent = (recipe) => {
-    return (
-      <Recipe recipe={recipe} key={recipe.id}>
-        <FavoriteButton
-          icon={unfavoriteIconUrl}
-          onClickHandler={() => onRemoveRecipeHandler(recipe)}
-        >
-          Remove Favorite
-        </FavoriteButton>
-      </Recipe>
-    );
-  };
-
   return (
     <div className="recipes-container">
-      {favoriteRecipes.map(createRecipeComponent)}
+      {favoriteRecipes.map((recipe) => {
+        return (
+          <Recipe recipe={recipe} key={recipe.id}>
+            <FavoriteButton
+              icon={unfavoriteIconUrl}
+              onClickHandler={() => onRemoveRecipeHandler(recipe)}
+            >
+              Remove Favorite
+            </FavoriteButton>
+          </Recipe>
+        );
+      })}
     </div>
   );
 };

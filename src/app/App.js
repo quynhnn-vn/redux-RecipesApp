@@ -5,6 +5,13 @@ import { FavoriteRecipes } from "../features/favoriteRecipes/FavoriteRecipes";
 import { AllRecipes } from "../features/allRecipes/AllRecipes";
 
 const App = ({ state, dispatch }) => {
+  // Search recipes matching a term
+  const getFilteredRecipes = (recipes, searchTerm) => {
+    return recipes.filter((recipe) =>
+      recipe.name.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+  };
+
   const visibleAllRecipes = getFilteredRecipes(
     state.allRecipes,
     state.searchTerm
@@ -38,10 +45,5 @@ const App = ({ state, dispatch }) => {
     </main>
   );
 };
-// Search recipes matching a term
-const getFilteredRecipes = (recipes, searchTerm) => {
-  return recipes.filter((recipe) =>
-    recipe.name.toLowerCase().includes(searchTerm.toLowerCase())
-  );
-};
+
 export default App;

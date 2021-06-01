@@ -15,6 +15,7 @@ export const removeRecipe = (recipe) => {
 
 // Create initialState and reducer for favoriteRecipes slice
 const initialFavoriteRecipes = [];
+
 export const favoriteRecipesRecuder = (
   favoriteRecipes = initialFavoriteRecipes,
   action
